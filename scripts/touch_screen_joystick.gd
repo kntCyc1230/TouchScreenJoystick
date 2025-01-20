@@ -1,8 +1,7 @@
 ##  RESPONSIVE TOUCHSCREEN JOYSTICK ##
-# feel free to use it, sorry for long comments lol
 
 @tool
-@icon("res://assets/textures/sprites/ui/joysticks/class_icon.png")
+@icon("res://touchscreenjoystickicon.png")
 extends Control
 class_name TouchScreenJoystick
 
