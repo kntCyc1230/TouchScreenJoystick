@@ -1,4 +1,4 @@
-##  RESPONSIVE TOUCHSCREEN JOYSTICK ##
+##  RESPONSIVE TOUCHSCREEN JOYSTICK 1.0.1 ##
 
 @tool
 @icon("res://touchscreenjoystickicon.png")
@@ -152,8 +152,6 @@ func release_input_actions() -> void:
 func update_input_actions() -> void:
 	if use_input_actions and is_pressing:
 		trigger_input_actions()
-	else:
-		release_input_actions()
 
 # please ignore these validitate functions it has nothing --
 # -- to do with the joystick's functionality 
@@ -364,9 +362,9 @@ func on_touched(event : InputEventScreenTouch) -> void:
 
 func on_touch_released() -> void:
 	is_pressing = false
-	
 	if mode == 1:
 		position = default_pos
+	release_input_actions()
 	change_opacity()
 
 
